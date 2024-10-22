@@ -1,0 +1,133 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ffffff;
+    background-image: linear-gradient(62deg, #ffffff 0%, #a9f2ff 100%);
+    /* border:2px solid black;     */
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    min-height: 50px;
+    /* position: fixed; */
+    /* top: 0px; */
+    width: 100%;
+    box-shadow: 0px 3px 50px #017ec7;
+
+
+}
+.navLinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 30%; */
+    gap: 40px;
+}
+a{
+    text-decoration: none;
+
+}
+h2{
+    font-size: 1.6rem;
+    /* font-family: cursive; */
+    color: rgb(49, 56, 137);
+}
+h1{
+    font-size: 2rem;
+    font-family: cursive;
+    color: rgb(195, 251, 255);
+}
+.container{
+    width: 50%;
+    margin: auto;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    background-color:rgba(240, 255, 255, 0);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.218);
+    padding: 3rem;
+}
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+
+}
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.rightBox img{
+    width: 300px;
+    border-radius: 10px;
+}
+.leftBox p{
+    font-size: 40px;
+    font-weight: 800;
+}
+h3{
+    font-size: 30px;
+}
+.rightBox{
+    position: relative;
+    transition: all 0.3s linear 0s;
+    box-shadow: 1px 1px 10px black;
+    border-radius:10px;
+}
+.rightBox .overlay{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(61, 59, 59, 0.546);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+    /* z-index: -1; */
+}
+.rightBox:hover .overlay{
+    opacity: 1;
+    /* transform: scale(1.1); */
+}
+.rightBox:hover{
+    transform: scale(1.1);
+}
+.footerBox{
+    min-height: 80px;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    /* position: absolute; */
+    /* bottom: 0px; */
+    width: 100%;
+}
+.footerBox p{
+    font-size:20px;
+    color: azure;
+    
+}
+.footerBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 50px #017ec7;
+}
+span h1{
+    font-size: 20px;
+    color: rgb(104, 223, 225);
+}
